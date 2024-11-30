@@ -93,7 +93,7 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&bt BT_CLR &trans     &trans     &trans      &trans          &trans       &trans     &trans         &trans      &trans     &trans     &kp DEL
+&bt BT_CLR &trans     &trans     &trans      &trans          &trans       &trans     &trans         &trans      &trans     &trans     &bootloader
 &trans     &trans     &trans     &trans      &trans          &trans       &trans     &kp LEFT       &kp DOWN    &kp UP     &kp RIGHT  &trans
 &trans     &bt BT(0)  &bt BT(1)  &bt BT(2)   &bt BT(3)       &bt BT(4)    &trans     &kp HOME       &kp PG_DN   &kp PG_UP  &kp END    &trans
 #ifdef TBLE_DUAL_2U
@@ -109,9 +109,9 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans     &kp LBKT   &trans &trans &trans    &kp RBKT    &kp C_PREV    &kp N7     &kp N8      &kp N9       &trans     &trans
-&trans     &kp MINUS  &trans &trans &trans    &kp EQUAL   &kp C_NEXT    &kp N4     &kp N5      &kp N6       &trans     &trans
-&trans     &kp GRAVE  &trans &trans &trans    &kp BSLH    &trans        &kp N1     &kp N2      &kp N3       &trans     &trans
+&kp GRAVE  &kp N1     &kp N2  &kp N3 &kp N4    &KP N5      &kp N  6      &kp N7     &kp N8      &kp N9       &kp N0     &trans     
+&trans     &kp MINUS  &trans  &trans &trans    &kp EQUAL   &kp C_NEXT    &kp MINUS  &kp EQUAL   &kp LBKT     &kp RBKT   &kp BSLH 
+&trans     &kp GRAVE  &trans  &trans &trans    &kp BSLH    &trans        &kp N1     &kp N2      &kp N3       &trans     &trans
 #ifdef TBLE_DUAL_2U
 &trans  &trans       &trans     &kp N0              &trans                 &trans            &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
@@ -125,8 +125,8 @@
         sym_layer {
             label = "Sym";
             bindings = <
-&trans     &kp LBRC   &kp AMPS   &kp STAR    &kp LPAR     &kp RBRC     &trans     &trans    &trans       &trans       &trans     &bootloader
-&trans     &kp COLON  &kp DLLR   &kp PRCNT   &kp CARET    &kp PLUS     &trans     &trans    &trans       &trans       &trans     &trans
+&kp TILDE  &kp EXCL   &kp AT     &kp HASH    &kp DLLR     &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR     &kp LPAR     &kp RPAR   &kp DEL
+&trans     &kp COLON  &kp DLLR   &kp PRCNT   &kp CARET    &kp PLUS     &trans     &kp UNDER &kp PLUS     &kp LBRC     &kp RBRC   &kp PIPE
 &trans     &kp TILDE  &kp EXCL   &kp AT      &kp HASH     &kp PIPE     &trans     &trans    &trans       &trans       &trans     &trans
 #ifdef TBLE_DUAL_2U
 &trans &trans        &trans     &kp RPAR                &trans                    &trans       &trans         &trans &trans &trans
